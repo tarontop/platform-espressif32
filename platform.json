@@ -75,7 +75,7 @@
       "type": "framework",
       "optional": true,
       "owner": "platformio",
-      "version": "https://github.com/espressif/arduino-esp32.git#idf-release/v4.2"
+      "version": "https://github.com/Jason2866/arduino-esp32.git#idf-release/v3.3"
     },
     "framework-arduino-mbcwb": {
       "type": "framework",
