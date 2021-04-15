@@ -31,6 +31,13 @@
       "homepage": "https://docs.espressif.com/projects/esp-idf/en/latest/esp32/",
       "title": "Espressif IoT Development Framework"
     },
+    "riscv32": {
+      "package": "framework-arduinoriscv32",
+      "script": "builder/frameworks/arduino.py",
+      "description": "riscv32 is the official development framework for the ESP32-C3 SoC.",
+      "homepage": "https://docs.espressif.com/",
+      "title": "Espressif IoT Development Framework"
+    },
     "simba": {
       "package": "framework-simba",
       "script": "builder/frameworks/simba.py",
@@ -57,6 +64,12 @@
       "type": "toolchain",
       "optional": true,
       "owner": "platformio",
+      "version": "~1.80400.0"
+    },
+    "toolchain-riscv32": {
+      "type": "toolchain",
+      "optional": true,
+      "owner": "",
       "version": "~1.80400.0"
     },
     "toolchain-esp32ulp": {
