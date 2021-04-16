@@ -138,15 +138,15 @@ env.Replace(
     __get_board_f_flash=_get_board_f_flash,
     __get_board_flash_mode=_get_board_flash_mode,
 
-    AR="riscv32-esp-elf-ar" % mcu,
-    AS="riscv32-esp-elf-as" % mcu,
-    CC="riscv32-esp-elf-gcc" % mcu,
-    CXX="riscv32-esp-elf-g++" % mcu,
-    GDB="riscv32-esp-elf-gdb" % mcu,
+    AR="riscv32-esp-elf-ar",
+    AS="riscv32-esp-elf-as",
+    CC="riscv32-esp-elf-gcc",
+    CXX="riscv32-esp-elf-g++",
+    GDB="riscv32-esp-elf-gdb",
     OBJCOPY=join(
         platform.get_package_dir("tool-esptoolpy") or "", "esptool.py"),
-    RANLIB="riscv32-esp-elf-ranlib" % mcu,
-    SIZETOOL="riscv32-esp-elf-size" % mcu,
+    RANLIB="riscv32-esp-elf-ranlib",
+    SIZETOOL="riscv32-esp-elf-size",
 
     ARFLAGS=["rc"],
 
