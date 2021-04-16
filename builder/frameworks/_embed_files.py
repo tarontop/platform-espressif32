@@ -113,11 +113,11 @@ env.Append(
             action=env.VerboseAction(
                 " ".join(
                     [
-                        "riscv32-esp32-elf-objcopy",
+                        "riscv32-esp-elf-objcopy",
                         "--input-target",
                         "binary",
                         "--output-target",
-                        "elf32-riscv32-le",
+                        "elf-riscv32-le",
                         "--binary-architecture",
                         "riscv32",
                         "--rename-section",
