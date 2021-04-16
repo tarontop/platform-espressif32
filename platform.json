@@ -9,7 +9,8 @@
     "Wi-Fi",
     "Bluetooth",
     "Xtensa",
-    "LX6"
+    "LX6",
+    "riscv"
   ],
   "engines": {
     "platformio": "^5"
@@ -36,7 +37,7 @@
       "script": "builder/frameworks/arduino.py",
       "description": "riscv32 is the official development framework for the ESP32-C3 SoC.",
       "homepage": "https://docs.espressif.com/",
-      "title": "Espressif IoT Development Framework"
+      "title": "riscv32"
     },
     "simba": {
       "package": "framework-simba",

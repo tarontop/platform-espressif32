@@ -62,7 +62,7 @@ SConscript(
 
 env.Replace(
     FLASH_EXTRA_IMAGES=[
-        ("0x1000", join("$PLATFORMFW_DIR", "simba", "3pp", "esp32",
+        ("0x0000", join("$PLATFORMFW_DIR", "simba", "3pp", "esp32",
                         "bin", "bootloader.bin")),
         ("0x8000", join("$PLATFORMFW_DIR", "simba", "3pp", "esp32",
                         "bin", "partitions_singleapp.bin"))

@@ -36,7 +36,7 @@ def prepare_ulp_env_vars(env):
     additional_packages = [
         os.path.join(
             platform.get_package_dir(
-                "toolchain-xtensa%s" % ("32s2" if idf_variant == "esp32s2" else "32")
+                "toolchain-riscv32"
             ),
             "bin",
         ),

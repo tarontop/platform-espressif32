@@ -113,13 +113,13 @@ env.Append(
             action=env.VerboseAction(
                 " ".join(
                     [
-                        "xtensa-esp32-elf-objcopy",
+                        "riscv32-esp32-elf-objcopy",
                         "--input-target",
                         "binary",
                         "--output-target",
-                        "elf32-xtensa-le",
+                        "elf32-riscv32-le",
                         "--binary-architecture",
-                        "xtensa",
+                        "riscv32",
                         "--rename-section",
                         ".data=.rodata.embedded",
                         "$SOURCE",

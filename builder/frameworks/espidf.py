@@ -49,7 +49,7 @@ idf_variant = mcu.lower()
 
 FRAMEWORK_DIR = platform.get_package_dir("framework-espidf")
 TOOLCHAIN_DIR = platform.get_package_dir(
-    "toolchain-xtensa%s" % ("32s2" if mcu == "esp32s2" else "32")
+    "toolchain-riscv32"
 )
 assert os.path.isdir(FRAMEWORK_DIR)
 
@@ -937,8 +937,8 @@ def build_tinyusb_lib(env):
             "+<port/common/src/descriptors_control.c>",
             "+<port/common/src/usb_descriptors.c>",
             "+<port/common/src/usbd.c>",
-            "+<port/esp32s2/src/device_controller_driver.c>",
-            "+<port/esp32s2/src/tinyusb.c>",
+            "+<port/esp32c3/src/device_controller_driver.c>",
+            "+<port/esp32c3/src/tinyusb.c>",
             "+<tinyusb/src/common/tusb_fifo.c>",
             "+<tinyusb/src/device/usbd_control.c>",
             "+<tinyusb/src/class/msc/msc_device.c>",
