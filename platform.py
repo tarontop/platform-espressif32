@@ -30,8 +30,6 @@ class Espressif32Platform(PlatformBase):
         frameworks = variables.get("pioframework", [])
         if "buildfs" in targets:
             self.packages["tool-mkspiffs"]["optional"] = False
-        if variables.get("upload_protocol"):
-            self.packages["tool-openocd-esp32"]["optional"] = False
         if "arduino" in frameworks:
             self.packages["toolchain-riscv32"]["version"] = "~1.80400.0"
         if mcu == "esp32c3":
